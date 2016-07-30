@@ -1,0 +1,26 @@
+{
+  "name": "rn-device-activity",
+  "version": "0.0.0",
+  "description": "Device Activity Events for React Native (iOS and Android)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehcode/rn-device-activity.git"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "device",
+    "activity",
+    "events",
+    "pause",
+    "resume",
+    "destroy"
+  ],
+  "author": "Ryan Leckey <leckey.ryan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mehcode/rn-device-activity/issues"
+  },
+  "homepage": "https://github.com/mehcode/rn-device-activity#readme"
+}

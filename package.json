@@ -1,6 +1,6 @@
 {
   "name": "rn-device-activity",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Device Activity Events for React Native (iOS and Android)",
   "repository": {
     "type": "git",

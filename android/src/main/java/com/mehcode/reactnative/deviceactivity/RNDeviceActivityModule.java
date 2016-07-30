@@ -6,8 +6,10 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings.Secure;
 
+import com.facebook.react.bridge.LifecycleEventListener;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 import java.util.HashMap;
 import java.util.Locale;
@@ -28,9 +30,9 @@ public class RNDeviceActivityModule extends ReactContextBaseJavaModule implement
     }
 
     private void emit(String eventName) {
-      getReactApplicationContext().
-          getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).
-          emit("RNDeviceActivity:" + eventName, null);
+        getReactApplicationContext().
+                getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).
+                emit("RNDeviceActivity:" + eventName, null);
     }
 
     @Override

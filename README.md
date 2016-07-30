@@ -18,7 +18,7 @@ react-native link rn-device-activity
 ```js
 import {DeviceEventEmitter} from "react-native";
 
-function handleSuspend() {
+function handleResume() {
   // called on suspend of app
 }
 

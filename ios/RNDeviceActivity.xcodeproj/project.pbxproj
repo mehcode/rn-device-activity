@@ -134,7 +134,8 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../React/**",
 					"$(inherited)",
 					"$(SRCROOT)/node_modules/react-native/React/**",
@@ -153,7 +154,8 @@
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../React/**",
 					"$(inherited)",
 					"$(SRCROOT)/node_modules/react-native/React/**",

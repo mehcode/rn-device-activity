@@ -22,6 +22,20 @@
                    name:@"UIApplicationDidBecomeActiveNotification"
                  object:nil
         ];
+
+        [[NSNotificationCenter defaultCenter]
+            addObserver:self
+               selector:@selector(protectedDataAvailable:)
+                   name:@"UIApplicationProtectedDataDidBecomeAvailable"
+                 object:nil
+        ];
+
+        [[NSNotificationCenter defaultCenter]
+            addObserver:self
+               selector:@selector(protectedDataUnavailable:)
+                   name:@"UIApplicationProtectedDataWillBecomeUnavailable"
+                 object:nil
+        ];
     }
     return self;
 }
@@ -36,6 +50,14 @@
 
 -(void)suspend:(NSNotification *)notification {
     [self.bridge.eventDispatcher sendDeviceEventWithName:@"devicePause" body:NULL];
+}
+
+-(void)protectedDataAvailable:(NSNotification *)notification {
+    [self.bridge.eventDispatcher sendDeviceEventWithName:@"protectedDataAvailable" body:NULL];
+}
+
+-(void)protectedDataUnavailable:(NSNotification *)notification {
+    [self.bridge.eventDispatcher sendDeviceEventWithName:@"protectedDataUnavailable" body:NULL];
 }
 
 RCT_EXPORT_MODULE();
